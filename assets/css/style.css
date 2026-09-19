@@ -39,6 +39,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Italiana";
+    src: url("../../fonts/Italiana-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,16 +68,17 @@ body {
 /* Per-language type family — every visible text node is rendered three times (.english/.hindi/
    .gujrati spans per project.md rule 4); the language decides the font, not the element. */
 .english {
-    font-family: "Baloo", cursive, sans-serif;
+    font-family: "Italiana", serif;
 }
 
 .hindi {
     font-family: "ITFDevanagari", "Noto Sans Devanagari", sans-serif;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .gujrati {
     font-family: "NotoSansGujarati", sans-serif;
+    font-weight: 700;
 }
 
 /* djp.js injects this button expecting a close.png asset we don't have */
